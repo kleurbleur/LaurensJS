@@ -11,10 +11,11 @@
 
 
 <div id="top">
-  <form name="numbercheck" onsubmit="">
-    <label for="guess">A number between 1 and 10:</label>
-    <input type="number" name="guess" min="0" max="10" placeholder="0">
+  <form name="numbercheck" >
+    <label for="guess">Guess a number between 1 and 10. You can try three times:</label>
+    <input type="number" name="guess" id="box" min="0" max="10" placeholder="0" required pattern=[0-9 onselect="clearresult()" ]>
   </form>
+  <button onclick="checkNumber()">Check</button>
 </div>
 
 <script src="js/main.js"></script> 
